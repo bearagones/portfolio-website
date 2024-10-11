@@ -1,0 +1,116 @@
+/* Adjust icon size */
+.toggle-icon {
+    font-size: 1.5rem;
+}
+
+/* Default light mode body */
+body, html {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: x-large;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f9f2 !important;
+    color: #030202 !important;
+}
+
+/* Default light mode navbar */
+.navbar {
+    background-color: #d1eac8;
+    color: #1c252e;
+}
+
+.nav-link {
+    color: #719484 !important;
+    transition: all .25s ease-in-out !important; 
+}
+
+.nav-link:hover {
+    color: #26537e !important;
+    text-shadow: #d2dae3 !important;
+    font-size: 115%;
+    font-weight: bolder;
+}
+
+/* Dark mode backgorund */ 
+.dark-mode {
+    background-color: #030202 !important;
+    color: #d2dae3;
+}
+
+/* Dark mode navbar */
+.dark-mode .navbar {
+    background-color: #080d06; 
+    color: #e4e5e7;
+}
+
+/* Dark mode links */
+.dark-mode .navbar .nav-link {
+    color: #ffffff;
+}
+
+/* Dark mode links on hover */
+.dark-mode .navbar .nav-link:hover {
+    color: #dddddd; 
+}
+
+/* Dark mode toggle icon color */
+.dark-mode .toggle-icon i {
+    color: #ffffff;
+}
+
+.row {
+  padding: 25px;
+}
+
+/* Style headshot */
+.beatrice-headshot {
+    height: 500px;
+    border: 10px solid #719484;
+    border-radius: 1000px;
+}
+
+.beatrice-graduation, .beatrice-logo, .beatrice-pc {
+  height: 300px;
+  border: 10px solid #719484;
+  border-radius: 1000px;
+}
+
+#home-screen, #about-screen, #experience-screen {
+    height: 100vh;
+    width: 100vw;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  scroll-margin-top: 89px;
+}
+
+#about-screen {
+    background-color: #d2dae3;
+}
+
+#introduction, #academics, #etsy, #hobbies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 50px 0px;
+}
+
+#headshot, #grad-pic, #etsy-logo, #hobby-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#introduction-text, #academics-text, #etsy-text, #hobbies-text {
+  padding: 40px;
+  border: 10px solid black;
+  border-radius: 50px;
+}
