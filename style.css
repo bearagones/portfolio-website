@@ -17,14 +17,15 @@ body, html {
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #f5f9f2 !important;
-    color: #030202 !important;
+    background-color: #F5F9F2 !important;
+    color: #1E3715 !important;
 }
 
 /* Default light mode navbar */
 .navbar {
     background-color: #d1eac8;
     color: #1c252e;
+    border-bottom: 2px solid white;
 }
 
 .nav-link {
@@ -33,7 +34,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #26537e !important;
+    color: #1E3715 !important;
     text-shadow: #d2dae3 !important;
     font-size: 115%;
     font-weight: bolder;
@@ -41,8 +42,8 @@ body {
 
 /* Dark mode backgorund */ 
 .dark-mode {
-    background-color: #030202 !important;
-    color: #d2dae3;
+    background-color: #18191B !important;
+    color: #E4E5E7 !important;
 }
 
 /* Dark mode navbar */
@@ -67,7 +68,7 @@ body {
 }
 
 .row {
-  padding: 25px;
+    padding: 25px;
 }
 
 /* Style headshot */
@@ -77,40 +78,54 @@ body {
     border-radius: 1000px;
 }
 
+.dark-mode #beatrice-headshot {
+    height: 750px;
+    border: 10px solid #81AFD9;
+    border-radius: 1000px;
+}
+
 #beatrice-graduation, #beatrice-logo, #beatrice-pc {
-  height: 360px;
-  border: 10px solid #719484;
-  border-radius: 1000px;
+    height: 360px;
+    border: 10px solid #719484;
+    border-radius: 1000px;
 }
 
 #home-screen, #about-screen, #experience-screen {
     height: 100vh;
     width: 100vw;
-  position: relative;
-  text-align: center;
-  box-sizing: border-box;
-  scroll-margin-top: 89px;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    scroll-margin-top: 89px;
 }
 
 #about-screen {
-    background-color: #d2dae3;
+    background-color: #D8E0D0;
 }
 
 #introduction, #academics, #etsy, #hobbies {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 50px 0px;
 }
 
 #headshot, #grad-pic, #etsy-logo, #hobby-pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #introduction-text, #academics-text, #etsy-text, #hobbies-text {
-  padding: 40px;
-  border: 10px solid black;
-  border-radius: 50px;
+    background-color: #FDFCFC;
+    padding: 40px;
+    border: 10px solid #719484;
+    border-radius: 50px;
 }
+
+button, #resume-button {
+    background-color: #1E3715 !important;
+    color: #FDFCFC !important;
+    border-radius: 50px !important;
+}
+

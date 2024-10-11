@@ -1,172 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Beatrice Aragones</title>
-        <link rel="stylesheet" href="/style.css">
-        <link rel="icon" href="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/bee-icon.png?v=1728461069618">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        <script src="/script.js" defer></script>
-        <script src="https://kit.fontawesome.com/c85d3ae764.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-      <!-- Navigation bar at top of screen -->
-        <nav class="navbar sticky-top navbar-expand-lg">
-            <div class="container-fluid">
-              <!-- Left side branding of navigation bar -->
-                <a class="navbar navbar-brand" href="#home-screen">
-                    <img src="/images/bee-icon.png" alt="Logo" height="50" class="d-inline-block align-text-top">
-                </a>
-                <!-- Toggler for when window shrinks -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-              <!-- Navigation items on right side of bar -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-screen">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experience-screen">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects-screen">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact-screen">Contact</a>
-                        </li>
-                    </ul>
-                  <!-- Light mode and dark mode toggler -->
-                    <div class="ms-3">
-                        <span id="modeIcon" class="toggle-icon" onclick="toggleDarkMode()">
-                            <i class="fa-solid fa-moon"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </nav>
-      <!-- Container for entire initial home screen -->
-        <div class="row" id="home-screen">
-            <div class="col" id="headshot">
-                <img src="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/beatrice-headshot.jpeg?v=1728461065045" alt="A girl wearing a checkered brown and white jacket, standing under a cherry blossom tree." class="rounded-circle" id="beatrice-headshot">
-            </div>
-            <div class="col" id="introduction">
-              <div id="introduction-text">
-                <h1>Hi, my name is Beatrice Aragones.</h1>
-                <p>
-                  I'm an Assistant IT Support Engineer – currently streamlining the workflow processes of physicians and nurses at Lane Fertility Institute. I'm passionate about problem solving and integrating math 
-                </p>
-              </div>
-            </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatrice Aragones</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/bee-icon.png?v=1728461069618">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/c85d3ae764.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navigation bar at top of screen -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- Left side branding of navigation bar -->
+        <a class="navbar navbar-brand" href="#home-screen">
+        <div class="logo-container">
+          <img src="/images/bee-icon.png" alt="Logo" height="50" class="d-inline-block align-text-top">
         </div>
-      <!-- Container for entire About Me screen -->
-      <div id="about-screen">
-        <!-- Academics row -->
-        <div class="row" id="about-academics">
-          <div class="col" id="grad-pic">
-            <img src="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/beatrice-graduation.jpeg?v=1728521026088" alt="A girl wearing a white dress and San Francisco State University sash standing in a rose garden." class="rounded-circle" id="beatrice-graduation">
-          </div>
-          <div class="col" id="academics">
-            <div id="academics-text">
-              <p>
-                I graduated from San Francisco State University back in 2022 with a B.S. in Applied Mathematics and a minor in Computer Science. 
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Etsy row -->
-        <div class="row" id="about-etsy">
-          <div class="col" id="etsy">
-            <div id="etsy-text">
-              <p>
-              I crochet and have an Etsy shop.
-              </p>
-            </div>
-          </div>
-          <div class="col" id="etsy-logo">
-            <img src="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/beatrice-crochet.png?v=1728521146825" alt="A drawing of a girl holding a ball of yarn and a bee flying around her in a grassy field with a river." class="rounded-circle" id="beatrice-logo">
-          </div>
-        </div>
-        <!-- Hobbies row -->
-        <div class="row" id="about-hobbies">
-          <div class="col" id="hobby-pic">
-            <img src="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/beatrice-hobbies.jpeg?v=1728521413451" alt="A blue and green-themed computer aesthetic." class="rounded-circle" id="beatrice-pc">
-          </div>
-          <div class="col" id="hobbies">
-            <div id="hobbies-text">
-              <p>
-                I like playing games.
-              </p>
-            </div>
+        </a>
+        <!-- Toggler for when window shrinks -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation items on right side of bar -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#about-screen">About</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#experience-screen">Experience</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#projects-screen">Projects</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#contact-screen">Contact</a>
+            </li>
+            <a href="papers/resume.pdf" target="_blank" class="btn btn-primary" id="resume-button">Resume</a>
+          </ul>
+          <!-- Light mode and dark mode toggler -->
+          <div class="ms-3">
+            <span id="modeIcon" class="toggle-icon" onclick="toggleDarkMode()">
+              <i class="fa-solid fa-moon"></i>
+            </span>
           </div>
         </div>
       </div>
-      <!-- Container for entire Experience screen -->
-      <div id="experience-screen">
-        <!-- Dev/Mission row -->
-        <div class="row" id="about-dev-mission">
-          <h3>
-            Dev/Mission • Pre-Apprentice
-          </h3>
-          <h4>
-            September 2024 – Present
-          </h4>
-          <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-primary" type="button">HTML & CSS</button>
-            <button class="btn btn-primary" type="button">JavaScript</button>
-            <button class="btn btn-primary" type="button">C++</button>
-            <button class="btn btn-primary" type="button">IoT</button>
-            <button class="btn btn-primary" type="button">Communication</button>
-          </div>
+    </nav>
+    <!-- Container for entire initial home screen -->
+    <div class="row" id="home-screen">
+      <div class="col" id="headshot">
+        <img src="/images/beatrice-light.jpeg" alt="A girl wearing a checkered brown and white jacket, standing under a cherry blossom tree." class="rounded-circle" id="beatrice-headshot">
+      </div>
+      <div class="col" id="introduction">
+        <div id="introduction-text">
+          <h1>Hi, my name is Beatrice Aragones.</h1>
           <p>
-            Participated in a pre-apprenticeship program, gaining hands-on experience in the Internet of Things (IoT), IT essentials, and front-end web development through numerous tech and coding projects. 
-            Engaged in various workshops on industry best practices, workplace etiquette, and professional communication, preparing for successful entry into the tech industry.
-          </p>
-        </div>
-        <!-- Lane Fertility Institute row -->
-        <div class="row" id="about-lfi">
-          <h3>
-            Lane Fertility Institute • Assistant IT Support Engineer
-          </h3>
-          <h4>
-            March 2024 – Present
-          </h4>
-          <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-primary" type="button">WordPress</button>
-            <button class="btn btn-primary" type="button">Linux</button>
-            <button class="btn btn-primary" type="button">AWS (Amazon Web Services)</button>
-            <button class="btn btn-primary" type="button">Google Administration</button>
-            <button class="btn btn-primary" type="button">Communication</button>
-          </div>
-          <p>
-            Encoded various medical forms into the clinic’s electronic medical record (EMR) system, enhancing the workflow of physicians and nurses as they work with patients undergoing egg donation. 
-            Responsible for creating and maintaining websites for the entire organization using WordPress and SiteGround, gaining a combined total of 5,000 unique visitors and 36,000 pageviews.
-          </p>
-        </div>
-        <!-- Lawrence Berkeley National Laboratory row -->
-        <div class="row" id="about-lbnl">
-          <h3>
-            Lawrence Berkeley National Laboratory • Research Affiliate
-          </h3>
-          <h4>
-            June 2023 – December 2023
-          </h4>
-          <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-primary" type="button">C++</button>
-            <button class="btn btn-primary" type="button">Optimization</button>
-            <button class="btn btn-primary" type="button">Matrices</button>
-            <button class="btn btn-primary" type="button">Research Collaboration</button>
-            <button class="btn btn-primary" type="button">Communication</button>
-          </div>
-          <p>
-            Collaborated with the Scalable Solvers group within the Applied Mathematics Computational Research Division in optimizing their current matrix sketching algorithm for hierarchically semi-separable matrices. 
-            Presented my findings on random-sampling matrix sketching to fellow interns and scientists working at the laboratory during the anticipated Summer poster session.
+            I'm an Assistant IT Support Engineer – currently streamlining the workflow processes of physicians and nurses at Lane Fertility Institute. I'm passionate about problem solving and integrating math 
           </p>
         </div>
       </div>
-    </body>
+    </div>
+    <!-- Container for entire About Me screen -->
+    <div id="about-screen">
+      <!-- Academics row -->
+      <div class="row" id="about-academics">
+        <div class="col" id="grad-pic">
+          <img src="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/beatrice-graduation.jpeg?v=1728521026088" alt="A girl wearing a white dress and San Francisco State University sash standing in a rose garden." class="rounded-circle" id="beatrice-graduation">
+        </div>
+        <div class="col" id="academics">
+          <div id="academics-text">
+            <p>
+              I graduated from San Francisco State University back in 2022 with a B.S. in Applied Mathematics and a minor in Computer Science. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Etsy row -->
+      <div class="row" id="about-etsy">
+        <div class="col" id="etsy">
+          <div id="etsy-text">
+            <p>
+            I crochet and have an Etsy shop.
+            </p>
+          </div>
+        </div>
+        <div class="col" id="etsy-logo">
+          <img src="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/beatrice-crochet.png?v=1728521146825" alt="A drawing of a girl holding a ball of yarn and a bee flying around her in a grassy field with a river." class="rounded-circle" id="beatrice-logo">
+        </div>
+      </div>
+      <!-- Hobbies row -->
+      <div class="row" id="about-hobbies">
+        <div class="col" id="hobby-pic">
+          <img src="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/beatrice-hobbies.jpeg?v=1728521413451" alt="A blue and green-themed computer aesthetic." class="rounded-circle" id="beatrice-pc">
+        </div>
+        <div class="col" id="hobbies">
+          <div id="hobbies-text">
+            <p>
+              I like playing games.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container for entire Experience screen -->
+    <div id="experience-screen">
+      <!-- Dev/Mission row -->
+      <div class="row" id="about-dev-mission">
+        <h3>
+          Dev/Mission • Pre-Apprentice
+        </h3>
+        <h4>
+          September 2024 – Present
+        </h4>
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary" type="button">HTML & CSS</button>
+          <button class="btn btn-primary" type="button">JavaScript</button>
+          <button class="btn btn-primary" type="button">C++</button>
+          <button class="btn btn-primary" type="button">IoT</button>
+          <button class="btn btn-primary" type="button">Communication</button>
+        </div>
+        <p>
+          Participated in a pre-apprenticeship program, gaining hands-on experience in the Internet of Things (IoT), IT essentials, and front-end web development through numerous tech and coding projects. 
+          Engaged in various workshops on industry best practices, workplace etiquette, and professional communication, preparing for successful entry into the tech industry.
+        </p>
+      </div>
+      <!-- Lane Fertility Institute row -->
+      <div class="row" id="about-lfi">
+        <h3>
+          Lane Fertility Institute • Assistant IT Support Engineer
+        </h3>
+        <h4>
+          March 2024 – Present
+        </h4>
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary" type="button">Linux</button>
+          <button class="btn btn-primary" type="button">PHP</button>
+          <button class="btn btn-primary" type="button">AWS (Amazon Web Services)</button>
+          <button class="btn btn-primary" type="button">Google Administration</button>
+          <button class="btn btn-primary" type="button">WordPress/SiteGround</button>
+        </div>
+        <p>
+          Encoded various medical forms into the clinic’s electronic medical record (EMR) system, enhancing the workflow of physicians and nurses as they work with patients undergoing egg donation. 
+          Responsible for creating and maintaining websites for the entire organization using WordPress and SiteGround, gaining a combined total of 5,000 unique visitors and 36,000 pageviews.
+        </p>
+      </div>
+      <!-- Lawrence Berkeley National Laboratory row -->
+      <div class="row" id="about-lbnl">
+        <h3>
+          Lawrence Berkeley National Laboratory • Research Affiliate
+        </h3>
+        <h4>
+          June 2023 – December 2023
+        </h4>
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary" type="button">C++</button>
+          <button class="btn btn-primary" type="button">Optimization</button>
+          <button class="btn btn-primary" type="button">Matrices</button>
+          <button class="btn btn-primary" type="button">Research Collaboration</button>
+          <button class="btn btn-primary" type="button">Communication</button>
+        </div>
+        <p>
+          Collaborated with the Scalable Solvers group within the Applied Mathematics Computational Research Division in optimizing their current matrix sketching algorithm for hierarchically semi-separable matrices. 
+          Presented my findings on random-sampling matrix sketching to fellow interns and scientists working at the laboratory during the anticipated Summer poster session.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
