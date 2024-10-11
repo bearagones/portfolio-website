@@ -71,14 +71,14 @@ body {
 }
 
 /* Style headshot */
-.beatrice-headshot {
-    height: 500px;
+#beatrice-headshot {
+    height: 750px;
     border: 10px solid #719484;
     border-radius: 1000px;
 }
 
-.beatrice-graduation, .beatrice-logo, .beatrice-pc {
-  height: 300px;
+#beatrice-graduation, #beatrice-logo, #beatrice-pc {
+  height: 360px;
   border: 10px solid #719484;
   border-radius: 1000px;
 }
