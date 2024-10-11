@@ -1,6 +1,7 @@
 /* Adjust icon size */
 .toggle-icon {
     font-size: 1.5rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 /* Default light mode body */
@@ -12,6 +13,7 @@ body, html {
     padding: 0;
     scroll-behavior: smooth;
     height: 100%;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 body {
@@ -26,11 +28,13 @@ body {
     background-color: #d1eac8;
     color: #1c252e;
     border-bottom: 2px solid white;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .nav-link {
     color: #719484 !important;
     transition: all .25s ease-in-out !important; 
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .nav-link:hover {
@@ -68,7 +72,19 @@ body {
 }
 
 .row {
-    padding: 25px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.about-container, .experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    max-height: none;
+    padding: 0;
 }
 
 /* Style headshot */
@@ -76,6 +92,7 @@ body {
     height: 750px;
     border: 10px solid #719484;
     border-radius: 1000px;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .dark-mode #beatrice-headshot {
@@ -87,16 +104,19 @@ body {
 #beatrice-graduation, #beatrice-logo, #beatrice-pc {
     height: 360px;
     border: 10px solid #719484;
-    border-radius: 1000px;
+    border-radius: 500px;
 }
 
 #home-screen, #about-screen, #experience-screen {
-    height: 100vh;
+    height: calc(100vh - 89px);
     width: 100vw;
     position: relative;
     text-align: center;
     box-sizing: border-box;
     scroll-margin-top: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #about-screen {
@@ -107,7 +127,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 50px 0px;
+    padding: 0px 20px;
 }
 
 #headshot, #grad-pic, #etsy-logo, #hobby-pic {
@@ -116,16 +136,32 @@ body {
     align-items: center;
 }
 
-#introduction-text, #academics-text, #etsy-text, #hobbies-text {
+#introduction-text, #academics-text, #etsy-text, #hobbies-text, #about-dev-mission, #about-lfi, #about-lbnl {
     background-color: #FDFCFC;
-    padding: 40px;
+    padding: 20px;
     border: 10px solid #719484;
     border-radius: 50px;
+    box-sizing: boder-box;
+}
+
+#about-dev-mission, #about-lfi, #about-lbnl {
+    width: 100vh;
+    padding: 10px;
 }
 
 button, #resume-button {
+    margin: 0;
     background-color: #1E3715 !important;
     color: #FDFCFC !important;
     border-radius: 50px !important;
+}
+
+.skill-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.875rem !important;
+    line-height: normal;
 }
 
