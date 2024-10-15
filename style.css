@@ -7,10 +7,8 @@
 /* Default light mode body */
 body, html {
     font-family: 'Raleway', sans-serif !important;
-    font-size: x-large;
+    font-size: 1.5rem;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
     scroll-behavior: smooth;
     height: 100%;
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -33,9 +31,9 @@ body {
 .nav-link {
     color: #719484 !important;
     transition: all .25s ease-in-out !important; 
-    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+/* Add responsive styles */
 .nav-link:hover {
     color: #1E3715 !important;
     text-shadow: #d2dae3 !important;
@@ -43,7 +41,7 @@ body {
     font-weight: bolder;
 }
 
-/* Dark mode backgorund */ 
+/* Dark mode background */ 
 .dark-mode {
     background-color: #18191B !important;
     color: #E4E5E7 !important;
@@ -72,40 +70,42 @@ body {
 
 .row {
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .about-container, .experience-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 20px; /* Adjusts space between items */
     justify-content: center;
-    max-height: none;
-    padding: 0;
+    max-height: none; /* Remove this if not needed */
+    width: 90%; /* Set a width percentage to be responsive */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Include padding in total width */
 }
 
 /* Style headshot */
 #beatrice-headshot {
-    height: 750px;
+    height: 50vw; /* Responsive height */
+    max-height: 750px; /* Limit max height */
     border: 10px solid #719484;
     border-radius: 1000px;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .dark-mode #beatrice-headshot {
-    height: 750px;
     border: 10px solid #81AFD9;
-    border-radius: 1000px;
 }
 
+/* Responsive image sizes */
 #beatrice-graduation, #beatrice-logo, #beatrice-pc {
-    height: 360px;
+    height: 25vw; /* Responsive height */
+    max-height: 360px; /* Limit max height */
     border: 10px solid #719484;
     border-radius: 500px;
 }
 
+/* Ensure each screen section fits the viewport exactly */
 #home-screen, #about-screen, #experience-screen, #projects-screen, #contact-screen {
     height: calc(100vh - 89px);
     width: 100vw;
@@ -126,7 +126,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 20px;
 }
 
 #headshot, #grad-pic, #etsy-logo, #hobby-pic {
@@ -137,17 +136,13 @@ body {
 
 #introduction-text, #academics-text, #etsy-text, #hobbies-text, #about-dev-mission, #about-lfi, #about-lbnl, .contact-container {
     background-color: #FDFCFC;
-    padding: 20px;
+    padding: 1vw;
     border: 10px solid #719484;
     border-radius: 50px;
-    box-sizing: boder-box;
+    box-sizing: border-box;
 }
 
-#about-dev-mission, #about-lfi, #about-lbnl {
-    width: 100vh;
-    padding: 10px;
-}
-
+/* Cards and buttons */
 .btn {
     margin: 0;
     background-color: #1E3715 !important;
@@ -171,7 +166,7 @@ body {
 
 #accordionExample {
     max-width: 80%;
-    min-width: 2048px; /* Set the maximum width for the accordion */
+    min-width: 80vw; /* Consider using responsive units */
     width: 100%; /* Ensure it is responsive */
     margin: 0 auto; /* Center it horizontally */
     padding: 20px; /* Add some padding */
@@ -199,14 +194,13 @@ body {
     width: 100%; /* Stretch image to fill width */
 }
 
+/* Social media icon */
 .social-icon {
-    color: #1E3715; /* Change to your desired color */
-    font-size: 1.5rem; /* You can adjust the size if needed */
-    transition: color 0.3s; /* Optional: smooth color transition on hover */
+    color: #1E3715;
+    font-size: 1.5rem;
+    transition: color 0.3s;
 }
 
 .social-icon:hover {
-    color: #719484; /* Change color on hover */
+    color: #719484;
 }
-
-
