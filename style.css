@@ -106,7 +106,7 @@ body {
     border-radius: 500px;
 }
 
-#home-screen, #about-screen, #experience-screen {
+#home-screen, #about-screen, #experience-screen, #projects-screen {
     height: calc(100vh - 89px);
     width: 100vw;
     position: relative;
@@ -148,7 +148,7 @@ body {
     padding: 10px;
 }
 
-button, #resume-button {
+.skill-label, #resume-button, .view-button {
     margin: 0;
     background-color: #1E3715 !important;
     color: #FDFCFC !important;
@@ -162,5 +162,35 @@ button, #resume-button {
     padding: 0.25rem 0.5rem !important;
     font-size: 0.875rem !important;
     line-height: normal;
+}
+
+#accordionExample {
+    max-width: 80%;
+    min-width: 2048px; /* Set the maximum width for the accordion */
+    width: 100%; /* Ensure it is responsive */
+    margin: 0 auto; /* Center it horizontally */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in the total width calculation */
+}
+
+.card {
+    height: auto; /* Set a fixed height for cards */
+    margin: 10px; /* Adjust margin as needed */
+    display: flex; /* Enable flexbox for card content */
+    flex-direction: column; /* Stack card content vertically */
+    justify-content: space-between; /* Space out the content evenly */
+}
+
+.card-title {
+    overflow: hidden; /* Prevent overflow */
+    white-space: normal; /* Allow the text to wrap */
+    width: 100%; /* Make sure the title takes the full width */
+    display: block; /* Make sure it's a block element */
+}
+
+.card-img-top {
+    max-height: 300px; /* Keep the height consistent */
+    object-fit: contain; /* Ensure the image scales down without being cropped */
+    width: 100%; /* Stretch image to fill width */
 }
 
