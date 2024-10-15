@@ -106,7 +106,7 @@ body {
     border-radius: 500px;
 }
 
-#home-screen, #about-screen, #experience-screen, #projects-screen {
+#home-screen, #about-screen, #experience-screen, #projects-screen, #contact-screen {
     height: calc(100vh - 89px);
     width: 100vw;
     position: relative;
@@ -118,7 +118,7 @@ body {
     align-items: center;
 }
 
-#about-screen {
+#about-screen, #contact-screen {
     background-color: #D8E0D0;
 }
 
@@ -148,7 +148,7 @@ body {
     padding: 10px;
 }
 
-.skill-label, #resume-button, .view-button {
+.skill-label, #resume-button, .view-button, .email-button {
     margin: 0;
     background-color: #1E3715 !important;
     color: #FDFCFC !important;
