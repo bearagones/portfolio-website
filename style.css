@@ -21,6 +21,12 @@ body {
     color: #1E3715 !important;
 }
 
+/* Dark mode background */ 
+.dark-mode {
+    background-color: #18191B !important;
+    color: #E4E5E7 !important;
+}
+
 /* Default light mode navbar */
 .navbar {
     background-color: #d1eac8;
@@ -28,9 +34,19 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+.dark-mode .navbar {
+    background-color: #080d06; 
+    color: #e4e5e7;
+}
+
 .nav-link {
     color: #719484 !important;
     transition: all .25s ease-in-out !important; 
+}
+
+/* Dark mode links */
+.dark-mode .nav-link {
+    color: #ffffff;
 }
 
 /* Add responsive styles */
@@ -41,26 +57,9 @@ body {
     font-weight: bolder;
 }
 
-/* Dark mode background */ 
-.dark-mode {
-    background-color: #18191B !important;
-    color: #E4E5E7 !important;
-}
-
-/* Dark mode navbar */
-.dark-mode .navbar {
-    background-color: #080d06; 
-    color: #e4e5e7;
-}
-
-/* Dark mode links */
-.dark-mode .navbar .nav-link {
-    color: #ffffff;
-}
-
 /* Dark mode links on hover */
-.dark-mode .navbar .nav-link:hover {
-    color: #dddddd; 
+.dark-mode .nav-link:hover {
+    color: #dddddd !important; 
 }
 
 /* Dark mode toggle icon color */
@@ -105,7 +104,7 @@ body {
     border-radius: 500px;
 }
 
-.dark-mode #beatrice-graduation, #beatrice-logo, #beatrice-pc {
+.dark-mode #beatrice-graduation, .dark-mode #beatrice-logo, .dark-mode #beatrice-pc {
     border: 10px solid #81AFD9;
 }
 
@@ -126,9 +125,9 @@ body {
     background-color: #D8E0D0;
 }
 
-.dark-mode #about-screen, #projects-screen {
-    background-color: #26537E;
-}
+.dark-mode #about-screen, .dark-mode #projects-screen {
+    background-color: #0F0E0E;
+} 
 
 #introduction, #academics, #etsy, #hobbies {
     display: flex;
@@ -150,8 +149,8 @@ body {
     box-sizing: border-box;
 }
 
-.dark-mode #introduction-text, #academics-text, #etsy-text, #hobbies-text, #about-dev-mission, #about-lfi, #about-lbnl, .contact-container {
-    background-color: #030202;
+.dark-mode #introduction-text, .dark-mode #academics-text, .dark-mode #etsy-text, .dark-mode #hobbies-text, .dark-mode #about-dev-mission, .dark-mode #about-lfi, .dark-mode #about-lbnl, .dark-mode .contact-container {
+    background-color: #1C252E;
     border: 10px solid #81AFD9;
 }
 
@@ -164,8 +163,16 @@ body {
     transition: color 0.3s;
 }
 
+.dark-mode .btn {
+    background-color: #81AFD9 !important;
+}
+
 .btn:hover {
     background-color:#719484 !important;
+}
+
+.dark-mode .btn:hover {
+    background-color: #26537E !important;
 }
 
 .skill-label {
@@ -214,6 +221,14 @@ body {
     transition: color 0.3s;
 }
 
+.dark-mode .social-icon {
+    color:#81AFD9;
+}
+
 .social-icon:hover {
     color: #719484;
+}
+
+.dark-mode .social-icon:hover {
+    color: #26537E;
 }
