@@ -1,22 +1,11 @@
-/* Adjust icon size */
-.toggle-icon {
-    font-size: 1.5rem;
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
 /* Default light mode body */
 body,
 html {
     font-family: 'Raleway', sans-serif !important;
     font-size: 1.25rem;
+    height: 100%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
     height: 100%;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -26,6 +15,12 @@ body {
     width: 100vw;
     background-color: #F5F9F2 !important;
     color: #1E3715 !important;
+}
+
+/* Adjust icon size */
+.toggle-icon {
+    font-size: 1.5rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 /* Dark mode body */
@@ -144,7 +139,6 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 
 #about-screen,
 #projects-screen {
