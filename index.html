@@ -1,301 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beatrice Aragones</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="icon" href="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/bee-icon.png?v=1728461069618">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Load Bootstrap JavaScript Bundle with Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="/script.js" defer></script>
-    <script src="https://kit.fontawesome.com/c85d3ae764.js" crossorigin="anonymous" defer></script>
-  </head>
-  <body>
-    <!-- Navigation bar at top of screen -->
-    <nav class="navbar sticky-top navbar-expand-lg">
-      <div class="container-fluid">
-        <!-- Left side branding of navigation bar -->
-        <a class="navbar navbar-brand" href="#home-screen">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beatrice Aragones</title>
+  <link rel="stylesheet" href="/style.css" />
+  <!-- Icon for tab -->
+  <link rel="icon" href="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/bee-icon.png?v=1728461069618" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/c85d3ae764.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+  <!-- Navigation bar at top of screen -->
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Left side branding of navigation bar -->
+      <a class="navbar navbar-brand" href="#home-screen">
         <div class="logo-container">
-          <img src="/images/bee-icon.png" alt="Logo" height="50" class="d-inline-block align-text-top">
+          <img src="/images/bee-icon.png"
+            alt="Logo" height="50" class="d-inline-block align-text-top" />
         </div>
-        </a>
-        <!-- Toggler for when window shrinks -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navigation items on right side of bar -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#about-screen">About</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#experience-screen">Experience</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#projects-screen">Projects</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#contact-screen">Contact</a>
-            </li>
-            <a href="papers/resume.pdf" target="_blank" class="btn btn-primary" id="resume-button">Resume</a>
-          </ul>
-          <!-- Light mode and dark mode toggler -->
-          <div class="ms-3">
-            <span id="modeIcon" class="toggle-icon" onclick="toggleDarkMode()">
-              <i class="fa-solid fa-moon"></i>
-            </span>
-          </div>
+      </a>
+      <!-- Toggler for when window shrinks -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation items on right side of bar -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#about-screen">About</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#experience-screen">Experience</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#projects-screen">Projects</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#contact-screen">Contact</a>
+          </li>
+          <a href="/papers/resume.pdf"
+            target="_blank" class="btn btn-primary" id="resume-button">Resume</a>
+        </ul>
+        <!-- Light mode and dark mode toggler -->
+        <div class="ms-3">
+          <span id="modeIcon" class="toggle-icon" onclick="toggleDarkMode()">
+            <i class="fa-solid fa-moon"></i>
+          </span>
         </div>
       </div>
-    </nav>
-    <!-- Container for entire initial home screen -->
-    <section id="home-screen">
-      <div class="row">
+    </div>
+  </nav>
+  <!-- Container for entire initial home screen -->
+  <div id="home-screen">
+    <div id="home-container container-fluid">
+      <div class="row justify-content-around">
         <div class="col" id="headshot">
-          <img src="/images/beatrice-light.jpeg" alt="A girl wearing a checkered brown and white jacket, standing under a cherry blossom tree." class="rounded-circle" id="beatrice-headshot">
+          <img
+            src="/images/beatrice-light.jpeg"
+            alt="A girl wearing a checkered brown and white jacket, standing under a cherry blossom tree."
+            class="rounded-circle" id="beatrice-headshot" />
         </div>
         <div class="col" id="introduction">
           <div id="introduction-text">
             <h1>Hi, my name is Beatrice Aragones.</h1>
+            <h5>
+              I'm an Assistant IT Support Engineer – currently streamlining
+              the workflow processes of physicians and nurses at Lane
+              Fertility Institute. I’m passionate about problem-solving and
+              integrating math into various technological domains, leveraging
+              my analytical skills to approach challenges from multiple
+              perspectives.
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container for entire About Me screen -->
+  <div id="about-screen">
+    <div id="about-container container-fluid">
+      <!-- Academics row -->
+      <div class="row justify-content-around" id="about-academics">
+        <!-- Academics image -->
+        <div class="col-5" id="grad-pic">
+          <img
+            src="/images/beatrice-graduation.jpeg"
+            alt="A girl wearing a white dress and San Francisco State University sash standing in a rose garden."
+            class="rounded-circle" id="beatrice-graduation" />
+        </div>
+        <!-- Academics text -->
+        <div class="col-5" id="academics">
+          <div id="academics-text">
             <p>
-              I'm an Assistant IT Support Engineer – currently streamlining the workflow processes of physicians and nurses at Lane Fertility Institute.
-              I’m passionate about problem-solving and integrating math into various technological domains, leveraging my analytical skills to approach challenges from multiple perspectives. 
+              I graduated from San Francisco State University back in 2022
+              with a B.S. in Applied Mathematics and a minor in Computer
+              Science. I chose this field of study because I personally love
+              working with numbers. At the moment, I am working towards
+              earning some technical certificates as well getting an
+              Associate's degree in Computer Networking and Information
+              Technology (CNIT) at City College of San Francisco.
             </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Container for entire About Me screen -->
-    <section id="about-screen">
-      <div id="about-container">
-        <!-- Academics row -->
-        <div class="row" id="about-academics">
-          <div class="col" id="grad-pic">
-            <img src="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/beatrice-graduation.jpeg?v=1728521026088" alt="A girl wearing a white dress and San Francisco State University sash standing in a rose garden." class="rounded-circle" id="beatrice-graduation">
-          </div>
-          <div class="col" id="academics">
-            <div id="academics-text">
-              <p>
-                I graduated from San Francisco State University back in 2022 with a B.S. in Applied Mathematics and a minor in Computer Science. 
-                I chose this field of study because I personally love working with numbers and firmly believe that math is a huge foundation of many subjects, even if it doesn't seem obvious at first.
-                At the moment, I am working towards earning some technical certificates as well getting an Associate's degree in Computer Networking and Information Technology (CNIT) at City College of San Francisco.
-              </p>
-            </div>
+      <!-- Etsy row -->
+      <div class="row justify-content-around" id="about-etsy">
+        <!-- Etsy text -->
+        <div class="col-5" id="etsy">
+          <div id="etsy-text">
+            <p>
+              In addition to work and schooling, I also run a small business
+              on the side where I sell my crochet creations. I've been
+              crocheting for about a decade now and make various items ranging
+              from small accessories to big stuffed animals. On some
+              occasions, I sell my work at local festivals and small farmers
+              markets. You can also find some of my products inside Handmade
+              in CA, a store inside Stonestown where a bunch of makers sell
+              their items.
+            </p>
           </div>
         </div>
-        <!-- Etsy row -->
-        <div class="row" id="about-etsy">
-          <div class="col" id="etsy">
-            <div id="etsy-text">
-              <p>
-                In addition to work and schooling, I also run a small Etsy business on the side where I sell my crochet creations. 
-                I've been crocheting for about a decade now and make various items ranging from small accessories to big stuffed animals. 
-                On some occasions, I sell my work at local festivals and small farmers markets. 
-                In addition to my Etsy store, you can find some of my products inside Handmade in CA, a store inside Stonestown mall where a bunch of other makers sell their items. 
-              </p>
-            </div>
-          </div>
-          <div class="col" id="etsy-logo">
-            <img src="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/beatrice-crochet.png?v=1728521146825" alt="A drawing of a girl holding a ball of yarn and a bee flying around her in a grassy field with a river." class="rounded-circle" id="beatrice-logo">
-          </div>
+        <!-- Etsy pic -->
+        <div class="col-4" id="etsy-logo">
+          <img src="/images/beatrice-crochet.png"
+            alt="A drawing of a girl holding a ball of yarn and a bee flying around her in a grassy field with a river."
+            class="rounded-circle" id="beatrice-logo" />
         </div>
-        <!-- Hobbies row -->
-        <div class="row" id="about-hobbies">
-          <div class="col" id="hobby-pic">
-            <img src="https://cdn.glitch.global/ce29cf64-aa3b-447a-b634-d3a4c1562c3e/beatrice-hobbies.jpeg?v=1728521413451" alt="A blue and green-themed computer aesthetic." class="rounded-circle" id="beatrice-pc">
-          </div>
-          <div class="col" id="hobbies">
-            <div id="hobbies-text">
-              <p>
-                When I'm not crocheting, you can most definitely find me on my PC either playing video games or listening to music. 
-                Growing up, my sister and I played a lot of Harvest Moon games, which sparked my interest in cozy farming simulators like Stardew Valley and Minecraft. 
-                While I don't stick to one specific genre, I tend to gravitate more towards co-op or multiplayer games and mystery titles that require me to do a lot of thinking.
-              </p>
-            </div>
+      </div>
+      <!-- Hobbies row -->
+      <div class="row justify-content-around" id="about-hobbies">
+        <!-- Hobbies pic -->
+        <div class="col-5" id="hobby-pic">
+          <img
+            src="/images/beatrice-hobbies.jpeg"
+            alt="A blue and green-themed computer aesthetic." class="rounded-circle" id="beatrice-pc" />
+        </div>
+        <!-- Hobbies text -->
+        <div class="col-5" id="hobbies">
+          <div id="hobbies-text">
+            <p>
+              When I'm not crocheting, you can most definitely find me on my
+              PC either playing video games or listening to music. Growing up,
+              my sister and I played a lot of Harvest Moon games, which
+              sparked my interest in cozy farming simulators like Stardew
+              Valley and Minecraft. While I don't stick to one specific genre,
+              I tend to gravitate more towards co-op or multiplayer games and
+              mystery titles that require me to do a lot of thinking.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Container for entire Experience screen -->
-    <section id="experience-screen">
-      <div class="experience-container">
-        <!-- Dev/Mission row -->
-        <div class="row" id="about-dev-mission">
-          <h4>
-            Dev/Mission • Pre-Apprentice
-          </h4>
-          <h5>
-            September 2024 – Present
-          </h5>
-          <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-primary d-inline-block skill-label" type="button">HTML & CSS</button>
-            <button class="btn btn-primary d-inline-block skill-label" type="button">JavaScript</button>
-            <button class="btn btn-primary d-inline-block skill-label" type="button">C++</button>
-            <button class="btn btn-primary d-inline-block skill-label" type="button">IoT</button>
-            <button class="btn btn-primary d-inline-block skill-label" type="button">Communication</button>
-          </div>
-          <p>
-            Participated in a pre-apprenticeship program, gaining hands-on experience in the Internet of Things (IoT), IT essentials, and front-end web development through numerous tech and coding projects. 
-            Engaged in various workshops on industry best practices, workplace etiquette, and professional communication, preparing for successful entry into the tech industry.
-          </p>
+    </div>
+  </div>
+  <!-- Container for entire Experience screen -->
+  <div id="experience-screen">
+    <div class="experience-container container-fluid">
+      <!-- Dev/Mission row -->
+      <div class="row" id="about-dev-mission">
+        <h4>Dev/Mission • Pre-Apprentice</h4>
+        <h5>September 2024 – Present</h5>
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            HTML &amp CSS
+          </button>
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            JavaScript
+          </button>
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            C++
+          </button>
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            IoT
+          </button>
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            Communication
+          </button>
         </div>
-        <!-- Lane Fertility Institute row -->
-        <div class="row" id="about-lfi">
-          <h4>
-            Lane Fertility Institute • Assistant IT Support Engineer
-          </h4>
-          <h5>
-            March 2024 – Present
-          </h5>
-          <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-primary d-inline-block skill-label" type="button">Linux</button>
-            <button class="btn btn-primary d-inline-block skill-label" type="button">PHP</button>
-            <button class="btn btn-primary d-inline-block skill-label" type="button">AWS (Amazon Web Services)</button>
-            <button class="btn btn-primary d-inline-block skill-label" type="button">Google Administration</button>
-            <button class="btn btn-primary d-inline-block skill-label" type="button">WordPress/SiteGround</button>
-          </div>
-          <p>
-            Encoded various medical forms into the clinic’s electronic medical record (EMR) system, enhancing the workflow of physicians and nurses as they work with patients undergoing egg donation. 
-            Responsible for creating and maintaining websites for the entire organization using WordPress and SiteGround, gaining a combined total of 5,000 unique visitors and 36,000 pageviews.
-          </p>
-        </div>
-        <!-- Lawrence Berkeley National Laboratory row -->
-        <div class="row" id="about-lbnl">
-          <h4>
-            Lawrence Berkeley National Laboratory • Research Affiliate
-          </h4>
-          <h5>
-            June 2023 – December 2023
-          </h5>
-          <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-primary d-inline-block skill-label" type="button">C++</button>
-            <button class="btn btn-primary d-inline-block skill-label" type="button">Optimization</button>
-            <button class="btn btn-primary d-inline-block skill-label" type="button">Matrices</button>
-            <button class="btn btn-primary d-inline-block skill-label" type="button">Research Collaboration</button>
-            <button class="btn btn-primary d-inline-block skill-label" type="button">Communication</button>
-          </div>
-          <p>
-            Collaborated with the Scalable Solvers group within the Applied Mathematics Computational Research Division in optimizing their current matrix sketching algorithm for hierarchically semi-separable matrices. 
-            Presented my findings on random-sampling matrix sketching to fellow interns and scientists working at the laboratory during the anticipated Summer poster session.
-          </p>
-        </div>
+        <p>
+          Participated in a pre-apprenticeship program, gaining hands-on
+          experience in the Internet of Things (IoT), IT essentials, and
+          front-end web development through numerous tech and coding projects.
+          Engaged in various workshops on industry best practices, workplace
+          etiquette, and professional communication, preparing for successful
+          entry into the tech industry.
+        </p>
       </div>
-    </section>
-    <!-- Container for entire Projects screen -->
-    <section id="projects-screen">
-      <div class="projects-container">
-        <h2>My Projects</h2>
-        <div class="accordion" id="accordionExample">
-          <!-- Accordion Item for Papers -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Papers</button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="row">
-                  <!-- Card 1 -->
-                  <div class="col-md-4 mb-3">
-                    <div class="card">
-                      <img src="/images/On the Mathematical Properties of (p,q) Scales-01.png" class="card-img-top" alt="Paper Image 1">
-                      <div class="card-body">
-                        <h5 class="card-title">On the Mathematical Properties of (p,q) Scales</h5>
-                        <a href="/papers/math_paper.pdf" target="_blank" class="btn btn-primary view-button">Read Paper</a>
-                      </div>
+      <!-- Lane Fertility Institute row -->
+      <div class="row" id="about-lfi">
+        <h4>Lane Fertility Institute • Assistant IT Support Engineer</h4>
+        <h5>March 2024 – Present</h5>
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            Linux
+          </button>
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            PHP
+          </button>
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            AWS (Amazon Web Services)
+          </button>
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            Google Administration
+          </button>
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            WordPress/SiteGround
+          </button>
+        </div>
+        <p>
+          Encoded various medical forms into the clinic’s electronic medical
+          record (EMR) system, enhancing the workflow of physicians and nurses
+          as they work with patients undergoing egg donation. Responsible for
+          creating and maintaining websites for the entire organization using
+          WordPress and SiteGround, gaining a combined total of 5,000 unique
+          visitors and 36,000 pageviews.
+        </p>
+      </div>
+      <!-- Lawrence Berkeley National Laboratory row -->
+      <div class="row" id="about-lbnl">
+        <h4>Lawrence Berkeley National Laboratory • Research Affiliate</h4>
+        <h5>June 2023 – December 2023</h5>
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            C++
+          </button>
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            Optimization
+          </button>
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            Matrices
+          </button>
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            Research Collaboration
+          </button>
+          <button class="btn btn-primary d-inline-block skill-label" type="button">
+            Communication
+          </button>
+        </div>
+        <p>
+          Collaborated with the Scalable Solvers group within the Applied
+          Mathematics Computational Research Division in optimizing their
+          current matrix sketching algorithm for hierarchically semi-separable
+          matrices. Presented my findings on random-sampling matrix sketching
+          to fellow interns and scientists working at the laboratory during
+          the anticipated Summer poster session.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Container for entire Projects screen -->
+  <div id="projects-screen">
+    <div class="projects-container container-fluid">
+      <h2>My Projects</h2>
+      <div class="accordion" id="accordionExample">
+        <!-- Accordion Item for Papers -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Papers
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row justify-content-around">
+                <!-- Math paper card -->
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      src="/images/On the Mathematical Properties of (p,q) Scales-01.png"
+                      class="card-img-top" alt="Paper Image 1" />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        On the Mathematical Properties of (p,q) Scales
+                      </h5>
+                      <a href="/papers/math_paper.pdf"
+                        target="_blank" class="btn btn-primary view-button">Read Paper</a>
                     </div>
                   </div>
-                  <!-- Card 2 -->
-                  <div class="col-md-4 mb-3">
-                    <div class="card">
-                      <img src="/images/On the Relationship Between Edge Connectivity and Edge-Disjoint Spanning Trees-01.png" class="card-img-top" alt="Paper Image 2">
-                      <div class="card-body">
-                        <h5 class="card-title">On the Relationship Between Edge Connectivity and Edge-Disjoint Spanning Trees</h5>
-                        <a href="/papers/graph_theory_paper.pdf" target="_blank" class="btn btn-primary view-button">Read Paper</a>
-                      </div>
+                </div>
+                <!-- Graph theory paper card -->
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      src="/images/On the Relationship Between Edge Connectivity and Edge-Disjoint Spanning Trees-01.png"
+                      class="card-img-top" alt="Paper Image 2" />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        On the Relationship Between Edge Connectivity and
+                        Edge-Disjoint Spanning Trees
+                      </h5>
+                      <a href="/papers/graph_theory_paper.pdf"
+                        target="_blank" class="btn btn-primary view-button">Read Paper</a>
                     </div>
                   </div>
-                  <!-- Card 3 -->
-                  <div class="col-md-4 mb-3">
-                    <div class="card">
-                      <img src="/images/lbnl_poster.png" class="card-img-top" alt="Paper Image 3">
-                      <div class="card-body">
-                        <h5 class="card-title">Fast Sketching with Fast Walsh-Hadamard Transform</h5>
-                        <a href="/papers/lbnl_poster.pdf" target="_blank" class="btn btn-primary view-button">Read Poster</a>
-                      </div>
+                </div>
+                <!-- Matrix poster card -->
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      src="/images/lbnl_poster.png"
+                      class="card-img-top" alt="Paper Image 3" />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Fast Sketching with Fast Walsh-Hadamard Transform
+                      </h5>
+                      <a href="/papers/lbnl_poster.pdf"
+                        target="_blank" class="btn btn-primary view-button">Read Poster</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Accordion Item for Coding Projects -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Coding Projects
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="row">
-                  <!-- Card 1 -->
-                  <div class="col-md-3 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Lyrics Page</h5>
-                        <a href="https://beatrice-aragones-by-now-lyrics-with-css.glitch.me" target="_blank" class="btn btn-primary view-button">View Project</a>
-                      </div>
+        </div>
+        <!-- Accordion Item for Coding Projects -->
+        <div class="accordion-item float-left">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Coding Projects
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row justify-content-around">
+                <!-- Lyrics page card -->
+                <div class="col-md-3 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Lyrics Page</h5>
+                      <a href="https://beatrice-aragones-by-now-lyrics-with-css.glitch.me" target="_blank"
+                        class="btn btn-primary view-button">View Project</a>
                     </div>
                   </div>
-                  <!-- Card 2 -->
-                  <div class="col-md-3 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">IVF Calendar Generator</h5>
-                        <a href="https://github.com/LFIEngineering/ivf-calendar" target="_blank" class="btn btn-primary view-button">View Project</a>
-                      </div>
+                </div>
+                <!-- Calendar app card -->
+                <div class="col-md-3 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Edge Connectivity</h5>
+                      <a href="https://github.com/bearagones/edge-connectivity" target="_blank"
+                        class="btn btn-primary view-button">View Project</a>
                     </div>
                   </div>
-                  <!-- Card 3 -->
-                  <div class="col-md-3 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Web Application</h5>
-                        <a href="#" target="_blank" class="btn btn-primary view-button">View Project</a>
-                      </div>
+                </div>
+                <!-- Web app card -->
+                <div class="col-md-3 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Web Application</h5>
+                      <a href="#" target="_blank" class="btn btn-primary view-button">View Project</a>
                     </div>
                   </div>
-                  <!-- Card 4 -->
-                  <div class="col-md-3 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Edge Connectivity</h5>
-                        <a href="https://github.com/bearagones/edge-connectivity" target="_blank" class="btn btn-primary view-button">View Project</a>
-                      </div>
+                </div>
+                <!-- Edge connectivity app card -->
+                <div class="col-md-3 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">IoT Project</h5>
+                      <a href="" target="_blank" class="btn btn-primary view-button">View Project</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>    
-      </div>    
-    </section>
-    <!-- Container for entire Contact screen -->
-    <section id="contact-screen">
-      <div class="contact-container text-center"> <!-- Center text -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container for entire Contact screen -->
+  <div id="contact-screen">
+    <div class="contact-container container-fluid text-center">
+      <div class="contact-text">
         <h3>Thank you for taking the time to check out my page.</h3>
-        <h5>If you're interested in contacting me, email me or visit my links below!</h5>
-        <br>
-        <div class="row"> <!-- Bootstrap row for layout -->
-          <div class="col-sm-3 mb-3"> <!-- Column for each icon -->
+        <h5>
+          If you're interested in contacting me, email me or visit my links
+          below!
+        </h5>
+        <br />
+        <div class="row">
+          <div class="col-sm-3 mb-3">
             <a href="https://www.linkedin.com/in/beatrice-aragones/" target="_blank" class="social-icon">
               <i class="fa-brands fa-linkedin fa-2x"></i>
             </a>
@@ -316,9 +412,11 @@
             </a>
           </div>
         </div>
-        <br>
+        <br />
         <a href="mailto:ba.aragones@gmail.com" class="btn btn-primary email-button">Email Me</a>
       </div>
-    </section>
-  </body>
+    </div>
+  </div>
+</body>
+
 </html>

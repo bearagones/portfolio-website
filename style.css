@@ -4,10 +4,17 @@
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 /* Default light mode body */
-body, html {
+body,
+html {
     font-family: 'Raleway', sans-serif !important;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     overflow-x: hidden;
     scroll-behavior: smooth;
     height: 100%;
@@ -21,35 +28,37 @@ body {
     color: #1E3715 !important;
 }
 
-/* Dark mode background */ 
+/* Dark mode body */
 .dark-mode {
-    background-color: #18191B !important;
+    background-color: #122B3F !important;
     color: #E4E5E7 !important;
 }
 
 /* Default light mode navbar */
 .navbar {
-    background-color: #d1eac8;
-    color: #1c252e;
+    background-color: #D1EAC8;
+    color: #1C252E;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+/* Dark mode navbar */
 .dark-mode .navbar {
-    background-color: #080d06; 
-    color: #e4e5e7;
+    background-color: #5C7196;
+    color: #E4E5E7;
 }
 
+/* Default nav link color */
 .nav-link {
     color: #719484 !important;
-    transition: all .25s ease-in-out !important; 
+    transition: all .25s ease-in-out !important;
 }
 
-/* Dark mode links */
+/* Dark mode nav link */
 .dark-mode .nav-link {
-    color: #ffffff;
+    color: #1C252E !important;
 }
 
-/* Add responsive styles */
+/* Default nav link on hover */
 .nav-link:hover {
     color: #1E3715 !important;
     text-shadow: #d2dae3 !important;
@@ -57,59 +66,72 @@ body {
     font-weight: bolder;
 }
 
-/* Dark mode links on hover */
+/* Dark mode nav link on hover */
 .dark-mode .nav-link:hover {
-    color: #dddddd !important; 
+    color: #DDDDDD !important;
 }
 
 /* Dark mode toggle icon color */
 .dark-mode .toggle-icon i {
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
+/* Row styling */
 .row {
     width: 100%;
+    position: relative;
+    display: inline-block;
 }
 
-.about-container, .experience-container {
+.about-container,
+.experience-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* Adjusts space between items */
+    gap: 20px;
     justify-content: center;
-    max-height: none; /* Remove this if not needed */
-    width: 90%; /* Set a width percentage to be responsive */
-    margin: 0 auto; /* Center the container */
-    box-sizing: border-box; /* Include padding in total width */
+    max-height: none;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-/* Style headshot */
+/* Light mode headshot */
 #beatrice-headshot {
-    height: 50vw; /* Responsive height */
-    max-height: 750px; /* Limit max height */
+    height: 50vw;
+    max-height: 750px;
     border: 10px solid #719484;
     border-radius: 1000px;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+/* Dark mode headshot */
 .dark-mode #beatrice-headshot {
     border: 10px solid #81AFD9;
 }
 
-/* Responsive image sizes */
-#beatrice-graduation, #beatrice-logo, #beatrice-pc {
-    height: 25vw; /* Responsive height */
-    max-height: 360px; /* Limit max height */
+/* Light mode about page images */
+#beatrice-graduation,
+#beatrice-logo,
+#beatrice-pc {
+    height: 25vw;
+    max-height: 340px;
     border: 10px solid #719484;
     border-radius: 500px;
 }
 
-.dark-mode #beatrice-graduation, .dark-mode #beatrice-logo, .dark-mode #beatrice-pc {
+/* Dark mode about page images */
+.dark-mode #beatrice-graduation,
+.dark-mode #beatrice-logo,
+.dark-mode #beatrice-pc {
     border: 10px solid #81AFD9;
 }
 
-/* Ensure each screen section fits the viewport exactly */
-#home-screen, #about-screen, #experience-screen, #projects-screen, #contact-screen {
+#home-screen,
+#about-screen,
+#experience-screen,
+#projects-screen,
+#contact-screen {
     height: calc(100vh - 89px);
     width: 100vw;
     position: relative;
@@ -119,42 +141,93 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-#about-screen, #projects-screen {
+
+#about-screen,
+#projects-screen {
     background-color: #D8E0D0;
 }
 
-.dark-mode #about-screen, .dark-mode #projects-screen {
-    background-color: #0F0E0E;
-} 
+.dark-mode #about-screen,
+.dark-mode #projects-screen {
+    background-color: #09151F;
+}
 
-#introduction, #academics, #etsy, #hobbies {
+#introduction,
+#academics,
+#etsy,
+#hobbies {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#headshot, #grad-pic, #etsy-logo, #hobby-pic {
+#headshot,
+#grad-pic,
+#etsy-logo,
+#hobby-pic {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#introduction-text, #academics-text, #etsy-text, #hobbies-text, #about-dev-mission, #about-lfi, #about-lbnl, .contact-container {
+#introduction-text,
+#academics-text,
+#etsy-text,
+#hobbies-text,
+#about-dev-mission,
+#about-lfi,
+#about-lbnl,
+.contact-text {
     background-color: #FDFCFC;
     padding: 1vw;
     border: 10px solid #719484;
     border-radius: 50px;
     box-sizing: border-box;
+    transition: transform .3s ease-in-out;
 }
 
-.dark-mode #introduction-text, .dark-mode #academics-text, .dark-mode #etsy-text, .dark-mode #hobbies-text, .dark-mode #about-dev-mission, .dark-mode #about-lfi, .dark-mode #about-lbnl, .dark-mode .contact-container {
+#about-dev-mission,
+#about-lfi,
+#about-lbnl {
+    width: 65%;
+}
+
+img {
+    transition: all .3s ease-in-out !important;
+}
+
+img:hover,
+#introduction-text:hover,
+#academics-text:hover,
+#etsy-text:hover,
+#hobbies-text:hover,
+#about-dev-mission:hover,
+#about-lfi:hover,
+#about-lbnl:hover,
+.contact-text:hover {
+    transform: scale(1.10);
+}
+
+.contact-container {
+    width: 65% !important;
+}
+
+.dark-mode #introduction-text,
+.dark-mode #academics-text,
+.dark-mode #etsy-text,
+.dark-mode #hobbies-text,
+.dark-mode #about-dev-mission,
+.dark-mode #about-lfi,
+.dark-mode #about-lbnl,
+.dark-mode .contact-text {
     background-color: #1C252E;
     border: 10px solid #81AFD9;
 }
 
-/* Cards and buttons */
 .btn {
     margin: 0;
     background-color: #1E3715 !important;
@@ -168,7 +241,7 @@ body {
 }
 
 .btn:hover {
-    background-color:#719484 !important;
+    background-color: #719484 !important;
 }
 
 .dark-mode .btn:hover {
@@ -186,35 +259,52 @@ body {
 
 #accordionExample {
     max-width: 80%;
-    min-width: 80vw; /* Consider using responsive units */
-    width: 100%; /* Ensure it is responsive */
-    margin: 0 auto; /* Center it horizontally */
-    padding: 20px; /* Add some padding */
-    box-sizing: border-box; /* Include padding in the total width calculation */
+    min-width: 80vw;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dark-mode .accordion-body {
+    background-color: #1C252E;
+}
+
+.accordion-button {
+    background-color: #1E3715 !important;
+    color: #FDFCFC !important;
+}
+
+.dark-mode .accordion-button {
+    background-color: #81AFD9 !important;
+    color: #FDFCFC !important;
+}
+
+.accordion-button::after {
+    background-color: #FDFCFC !important;
 }
 
 .card {
-    height: auto; /* Set a fixed height for cards */
-    margin: 10px; /* Adjust margin as needed */
-    display: flex; /* Enable flexbox for card content */
-    flex-direction: column; /* Stack card content vertically */
-    justify-content: space-between; /* Space out the content evenly */
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-title {
-    overflow: hidden; /* Prevent overflow */
-    white-space: normal; /* Allow the text to wrap */
-    width: 100%; /* Make sure the title takes the full width */
-    display: block; /* Make sure it's a block element */
+    overflow: hidden;
+    white-space: normal;
+    width: 100%;
+    display: block;
 }
 
 .card-img-top {
-    max-height: 300px; /* Keep the height consistent */
-    object-fit: contain; /* Ensure the image scales down without being cropped */
-    width: 100%; /* Stretch image to fill width */
+    max-height: 300px;
+    object-fit: contain;
+    width: 100%;
 }
 
-/* Social media icon */
 .social-icon {
     color: #1E3715;
     font-size: 1.5rem;
@@ -222,7 +312,7 @@ body {
 }
 
 .dark-mode .social-icon {
-    color:#81AFD9;
+    color: #81AFD9;
 }
 
 .social-icon:hover {
