@@ -127,8 +127,8 @@ body {
 #experience-screen,
 #projects-screen,
 #contact-screen {
-    height: calc(100vh - 89px);
-    width: 100vw;
+    min-height: calc(100vh - 89px);
+    min-width: 100vw;
     position: relative;
     text-align: center;
     box-sizing: border-box;
@@ -138,6 +138,8 @@ body {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 #about-screen,
